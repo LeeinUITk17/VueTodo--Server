@@ -8,15 +8,10 @@ export class UserService {
         private readonly databaseService: DatabaseService
       ) {}
     async create(userinfo: any): Promise<any> {
-        // Implement creating user logic here
-
-
-
+    
         return this.databaseService.user.create({
-            data: {
-                
+            data: {             
                 email: userinfo.email,
-                passwordHash: userinfo.passwordHash,
             }
         })
     }
