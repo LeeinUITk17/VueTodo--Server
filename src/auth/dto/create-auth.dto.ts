@@ -1,6 +1,6 @@
-import { IsEmail, IsOptional, IsString, IsUUID, IsDateString } from 'class-validator';
+import { IsEmail, IsOptional, IsString} from 'class-validator';
 
-export class CreateUserDto {
+export class CreateAuthDto {
   @IsEmail()
   email: string;
 

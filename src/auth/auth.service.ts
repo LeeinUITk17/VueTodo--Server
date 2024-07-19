@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 import { DatabaseService } from 'src/database/database.service';
-import { CreateUserDto } from './dto/create-auth.dto';
+import { CreateAuthDto } from './dto/create-auth.dto';
 
 
 export class AuthService {
@@ -14,7 +14,7 @@ export class AuthService {
 
     const { email } = response.data;
 
-    const userData: CreateUserDto = {
+    const userData: CreateAuthDto = {
       email,
       accessToken: token,
     };
