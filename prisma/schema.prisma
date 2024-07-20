@@ -40,7 +40,7 @@ enum Language {
 
 model User {
   id          String   @id @default(uuid())
-  email       String?   @unique
+  email       String   @unique
   accessToken  String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @default(now())
